@@ -1,13 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
-    <link rel="stylesheet" href="week01/styles/layout.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131: Dynamic Web Fundamentals</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles/base.css" />
 </head>
 <body>
-    <h1>WDD 131 - Roiman</h1>
-    
+    <header>
+        <span class="site-title">WDD 131: Dynamic Web Fundamentals</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/roiman-romero-robinson-98469a244">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p4#p4">Scripture</a></li>
+            <li><a href="[FINAL_PROJECT_FOLDER_LINK]">Final Project</a></li>
+        </ul>
+    </nav>
+
+      <!-- ======== PAGE TITLE ======== -->
+    <div class="page-title">
+        <h1>Roiman Romero</h1>
+    </div>
+
+    <main>
+    <!-- CARD 1: About Me -->
+    <section class="card">
+      <div class="card-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="card-body">
+
+        <!-- Intro paragraph + profile photo -->
+        <div class="about-intro">
+          <p>
+            Hi, I’m Roiman Romero. I work in web development and enjoy building projects that are practical, well-designed, and easy to use. Most of my experience has been focused on frontend development, responsive interfaces, and modern web tools like Vite, Express, and APIs. I like figuring out how things work, improving details, and turning ideas into something functional.
+
+            Outside of tech, I’m into superhero movies, electronic music, cooking, and traveling. I enjoy trying new recipes, discovering new places, and switching between warm beach cities and colder areas in Colombia depending on the mood. I also served a church mission in Cali, which taught me a lot about communication, discipline, and connecting with different kinds of people.
+
+            In general, I’d say I’m someone who enjoys learning, staying curious, and keeping a balance between work, creativity, and experiences outside the screen.
+          </p>
+          <img
+            src="images/profile.jpg"
+            alt="Profile picture of Roiman Romero"
+            class="profile-photo"
+          />
+        </div>
+         <!-- City divider -->
+        <div class="city-divider">
+          <span>Barranquilla, Colombia</span>
+        </div>
+
+        <!-- Flag + country description -->
+        <div class="country-info">
+          <div class="flag-wrap">
+            <img
+              src="images/flag.png"
+              alt="Official Flag of Colombia"
+              class="flag-img"
+            />
+            <span class="flag-caption">Official Flag of<br>Colombia</span>
+          </div>
+          <p class="country-text">
+            Colombia is a diverse country in South America known for its warm culture, varied landscapes, and rich traditions. It has everything from Caribbean beaches and tropical jungles to modern cities and cold mountain regions in the Andes. Colombia is also recognized for its music, coffee, food, and strong sense of community. Cities like Bogotá, Medellín, and Cartagena each offer very different experiences, which is part of what makes the country unique.
+          </p>
+        </div>
+
+      </div>
+    </section>
+     <!-- CARD 2: Web Dev Resources -->
+    <section class="card">
+      <div class="card-header">
+        <h2>Web Dev Resources</h2>
+      </div>
+      <div class="card-body">
+        <ul class="resources-list">
+          <li><a href="https://dev.to"              target="_blank">Dev.to Community</a></li>
+          <li><a href="https://smashingmagazine.com" target="_blank">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com"       target="_blank">CSS Tricks</a></li>
+          <li><a href="https://w3schools.com"        target="_blank">W3 Schools</a></li>
+          <li><a href="https://udemy.com"            target="_blank">Udemy</a></li>
+          <li><a href="https://picsum.photos"        target="_blank">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+    <footer>
+        <p>
+            &copy;<span id="currentyear">[YEAR]</span> Roiman Romero · Barranquilla, Colombia
+        </p>
+        <p id="lastModified">[Last modified placeholder]</p>
+
+        <script src="scripts/getdates.js"></script>
+    </footer>
+
+
 </body>
 </html>
+
