@@ -1,0 +1,51 @@
+/* Larger view overrides for Temple Album */
+
+@media (min-width: 700px) {
+  header {
+    padding: 1.3rem 2rem;
+  }
+
+  header .site-title {
+    margin-bottom: 0.3rem;
+    font-size: 1.6rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Show nav in larger view */
+  nav {
+    display: block !important;
+  }
+
+  nav ul {
+    max-width: var(--max-width);
+    margin: 0.8rem auto 0;
+    flex-direction: row; /* Flex required */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  nav ul li a {
+    padding: 0.65rem 0.9rem;
+  }
+
+  main {
+    padding: 1.6rem 2rem 2.8rem;
+  }
+
+  /* CSS Grid: multi-column on larger screens */
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
