@@ -1,0 +1,11 @@
+- [x] Create week03/design.html
+- [x] Create week03/styles/design.css
+- [x] Add basic HTML structure and link external CSS
+- [x] Place provided content inside <body>
+- [x] Use CSS to fix callout padding/grid span and left-align h2
+- [x] Replace marquee with static .banner div
+- [x] Layout main content in two columns (grid)
+- [x] Make h2 span two columns using grid-column
+- [x] Fix callout color contrast to pass WCAG (updated foreground color)
+- [x] Left-align footer content
+

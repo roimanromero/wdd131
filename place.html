@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover the world of horses — facts, data, and beauty of the savanna's noblest animal." />
+  <title>Horses — Majesty of the Plains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <h1>Horses</h1>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <picture>
+      <source
+        srcset="images/horse-lg.webp"
+        media="(min-width: 768px)"
+        width="1500"
+        height="1500"
+      />
+      <img
+        src="images/horse-sm.webp"
+        alt="A majestic horse galloping through the golden savanna at sunset"
+        width="500"
+        height="500"
+        loading="eager"
+      />
+    </picture>
+
+    <!-- DATA CARD (overlaid top-left on large, below image on small) -->
+    <div class="card card--data">
+      <h2 class="card__heading">Data</h2>
+      <dl class="info-list">
+        <dt>Species:</dt>       <dd>Equus ferus caballus</dd>
+        <dt>Lifespan:</dt>      <dd>25 – 30 years</dd>
+        <dt>Origin:</dt>        <dd>Central Asia</dd>
+        <dt>Height:</dt>        <dd>1.4 – 1.8 m (at withers)</dd>
+        <dt>Weight:</dt>        <dd>380 – 1,000 kg</dd>
+        <dt>Top Speed:</dt>     <dd>88 km/h</dd>
+        <dt>Diet:</dt>          <dd>Herbivore</dd>
+        <dt>Domesticated:</dt>  <dd>~3500 BCE</dd>
+      </dl>
+    </div>
+
+    <!-- WEATHER CARD (overlaid bottom-right on large, below data on small) -->
+    <div class="card card--weather">
+      <h2 class="card__heading weather__heading">Weather</h2>
+      <dl class="info-list">
+        <dt>Temperature:</dt>   <dd>28 °C</dd>
+        <dt>Conditions:</dt>    <dd>Sunny &amp; Dry</dd>
+        <dt>Wind:</dt>          <dd>12 km/h</dd>
+        <dt>Wind Chill:</dt>    <dd id="wind-chill">--</dd>
+      </dl>
+      <!-- SVG icon shown in mobile view via CSS -->
+      <img
+        class="weather__icon-mobile"
+        src="images/sunny.svg"
+        alt="Sunny weather icon"
+        width="80"
+        height="80"
+      />
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>
+      🐴 &nbsp;<span id="footer-year"></span> &nbsp;·&nbsp; Horses — Majesty of the Plains &nbsp;🐴
+    </p>
+    <p class="footer__modified">Last Modification: <span id="last-modified"></span></p>
+  </footer>
+
+</body>
+</html>
