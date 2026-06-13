@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Console</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+  <div class="console">
+
+    <header class="console__header">
+      <p class="console__eyebrow">Diagnostics Terminal &mdash; Field Report</p>
+      <h1 class="console__title">Product Review Console</h1>
+      <p class="console__sub">Log how a part performed so the next driver knows what to expect.</p>
+    </header>
+
+    <main class="panel">
+      <form class="review-form" action="review.html" method="get" novalidate>
+
+        <!-- Product Name -->
+        <div class="field">
+          <label for="product-name">Product</label>
+          <select id="product-name" name="product-name" required>
+            <option value="" disabled selected>Select a Product ...</option>
+          </select>
+        </div>
+
+        <!-- Overall Rating -->
+        <fieldset class="field field--rating">
+          <legend>Power Level Rating</legend>
+          <div class="rating" role="radiogroup" aria-label="Overall rating, 1 to 5 stars">
+            <input type="radio" id="rating-5" name="rating" value="5" required>
+            <label for="rating-5" title="5 stars &mdash; fully operational">
+              <span class="visually-hidden">5 stars</span>&star;
+            </label>
+
+            <input type="radio" id="rating-4" name="rating" value="4">
+            <label for="rating-4" title="4 stars &mdash; minor flux">
+              <span class="visually-hidden">4 stars</span>&star;
+            </label>
+
+            <input type="radio" id="rating-3" name="rating" value="3">
+            <label for="rating-3" title="3 stars &mdash; stable">
+              <span class="visually-hidden">3 stars</span>&star;
+            </label>
+
+            <input type="radio" id="rating-2" name="rating" value="2">
+            <label for="rating-2" title="2 stars &mdash; needs recalibration">
+              <span class="visually-hidden">2 stars</span>&star;
+            </label>
+
+            <input type="radio" id="rating-1" name="rating" value="1">
+            <label for="rating-1" title="1 star &mdash; malfunction">
+              <span class="visually-hidden">1 star</span>&star;
+            </label>
+          </div>
+          <p class="field__hint">1.21 stars minimum to keep the timeline stable.</p>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <div class="field">
+          <label for="install-date">Installation Date</label>
+          <input type="date" id="install-date" name="install-date" required>
+        </div>
+
+        <!-- Useful Features -->
+        <fieldset class="field">
+          <legend>Useful Features <span class="field__hint field__hint--inline">(check all that apply)</span></legend>
+          <div class="checkbox-grid">
+            <div class="checkbox">
+              <input type="checkbox" id="feature-install" name="features" value="easy-installation">
+              <label for="feature-install">Easy installation</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="feature-durable" name="features" value="durable-build">
+              <label for="feature-durable">Durable build</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="feature-value" name="features" value="good-value">
+              <label for="feature-value">Good value</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="feature-manual" name="features" value="clear-manual">
+              <label for="feature-manual">Clear instructions</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="feature-design" name="features" value="compact-design">
+              <label for="feature-design">Compact design</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="feature-support" name="features" value="great-support">
+              <label for="feature-support">Great support</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Written Review -->
+        <div class="field">
+          <label for="review-text">Written Review <span class="field__hint field__hint--inline">(optional)</span></label>
+          <textarea id="review-text" name="review-text" rows="5" placeholder="How did it perform under stress?"></textarea>
+        </div>
+
+        <!-- User Name -->
+        <div class="field">
+          <label for="user-name">Your Name <span class="field__hint field__hint--inline">(optional)</span></label>
+          <input type="text" id="user-name" name="user-name" placeholder="Marty M.">
+        </div>
+
+        <!-- Submit -->
+        <div class="field field--submit">
+          <input type="submit" value="Submit Review" class="btn">
+        </div>
+
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <p>Web Development Course &mdash; Assignment: Product Review Form</p>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>

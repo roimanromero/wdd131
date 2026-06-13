@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review Received &mdash; Product Review Console</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+
+  <div class="console">
+
+    <header class="console__header">
+      <p class="console__eyebrow">Diagnostics Terminal &mdash; Transmission Received</p>
+      <h1 class="console__title">Review Logged</h1>
+      <p class="console__sub">Thanks for sending your report back through the timeline.</p>
+    </header>
+
+    <main class="panel panel--confirmation">
+      <div class="summary" id="review-summary">
+        <!-- Filled in by scripts/form.js from the submitted form data -->
+      </div>
+
+      <div class="counter">
+        <p class="counter__label">Reviews logged on this device</p>
+        <p class="counter__value" id="review-counter">0</p>
+      </div>
+
+      <a class="btn btn--link" href="form.html">Submit another review</a>
+    </main>
+
+    <footer class="site-footer">
+      <p>Web Development Course &mdash; Assignment: Product Review Form</p>
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <script src="scripts/form.js"></script>
+</body>
+</html>
