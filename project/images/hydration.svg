@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="460" viewBox="0 0 560 460" role="img" aria-labelledby="title desc">
+  <title id="title">Hydration benefits illustration</title>
+  <desc id="desc">A glass of coconut water surrounded by electrolyte labels.</desc>
+  <rect width="560" height="460" rx="8" fill="#FFFFFF"/>
+  <circle cx="176" cy="114" r="62" fill="#F4A520" opacity=".85"/>
+  <circle cx="404" cy="350" r="78" fill="#0B6E4F" opacity=".18"/>
+  <path d="M223 86h114l-24 281c-3 32-19 50-50 50h-5c-31 0-47-18-50-50z" fill="#F9F4EC" stroke="#0B6E4F" stroke-width="8"/>
+  <path d="M218 169h124l-18 197c-3 25-16 38-40 38h-46c-24 0-37-13-40-38z" fill="#BFE8DC"/>
+  <path d="M214 169c30 17 60 17 89 0 22-12 45-12 69 0" fill="none" stroke="#0B6E4F" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#F4A520">
+    <circle cx="246" cy="234" r="9"/>
+    <circle cx="293" cy="273" r="7"/>
+    <circle cx="270" cy="330" r="10"/>
+    <circle cx="319" cy="221" r="6"/>
+  </g>
+  <g font-family="Arial, sans-serif" font-weight="700">
+    <rect x="55" y="205" width="132" height="54" rx="8" fill="#0B6E4F"/>
+    <text x="121" y="239" text-anchor="middle" font-size="20" fill="#F9F4EC">Potassium</text>
+    <rect x="374" y="119" width="122" height="54" rx="8" fill="#F4A520"/>
+    <text x="435" y="153" text-anchor="middle" font-size="20" fill="#1C2B22">Magnesium</text>
+    <rect x="376" y="250" width="110" height="54" rx="8" fill="#0B6E4F"/>
+    <text x="431" y="284" text-anchor="middle" font-size="20" fill="#F9F4EC">Calcium</text>
+  </g>
+</svg>

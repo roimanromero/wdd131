@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="560" viewBox="0 0 720 560" role="img" aria-labelledby="title desc">
+  <title id="title">CocoWave product cartons</title>
+  <desc id="desc">Three CocoWave coconut water cartons with coconut, mango, lime, and pineapple shapes.</desc>
+  <rect width="720" height="560" fill="none"/>
+  <circle cx="162" cy="382" r="68" fill="#F4A520"/>
+  <circle cx="574" cy="146" r="54" fill="#F4A520"/>
+  <path d="M110 217c37-62 106-75 171-34-61 54-116 68-171 34z" fill="#5A7367"/>
+  <path d="M463 410c42-62 119-66 172-20-54 47-119 56-172 20z" fill="#5A7367"/>
+  <g transform="translate(154 104) rotate(-7)">
+    <path d="M34 0h132l25 58v302c0 22-18 40-40 40H49c-22 0-40-18-40-40V58z" fill="#F9F4EC" stroke="#0B6E4F" stroke-width="8"/>
+    <path d="M34 0h132l25 58H9z" fill="#0B6E4F"/>
+    <text x="100" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="33" font-weight="700" fill="#0B6E4F">Coco</text>
+    <text x="100" y="153" text-anchor="middle" font-family="Georgia, serif" font-size="33" font-weight="700" fill="#0B6E4F">Wave</text>
+    <path d="M46 199c37 27 76 27 113 0" fill="none" stroke="#F4A520" stroke-width="12" stroke-linecap="round"/>
+    <text x="100" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1C2B22">Pure Original</text>
+    <text x="100" y="303" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5A7367">0g added sugar</text>
+  </g>
+  <g transform="translate(294 64)">
+    <path d="M34 0h132l25 58v338c0 22-18 40-40 40H49c-22 0-40-18-40-40V58z" fill="#F9F4EC" stroke="#0B6E4F" stroke-width="8"/>
+    <path d="M34 0h132l25 58H9z" fill="#0B6E4F"/>
+    <text x="100" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#0B6E4F">Coco</text>
+    <text x="100" y="162" text-anchor="middle" font-family="Georgia, serif" font-size="36" font-weight="700" fill="#0B6E4F">Wave</text>
+    <path d="M45 210c39 30 80 30 119 0" fill="none" stroke="#F4A520" stroke-width="13" stroke-linecap="round"/>
+    <text x="100" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="21" font-weight="700" fill="#1C2B22">Pineapple Lift</text>
+    <text x="100" y="319" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5A7367">natural electrolytes</text>
+  </g>
+  <g transform="translate(438 122) rotate(7)">
+    <path d="M34 0h132l25 58v302c0 22-18 40-40 40H49c-22 0-40-18-40-40V58z" fill="#F9F4EC" stroke="#0B6E4F" stroke-width="8"/>
+    <path d="M34 0h132l25 58H9z" fill="#0B6E4F"/>
+    <text x="100" y="118" text-anchor="middle" font-family="Georgia, serif" font-size="33" font-weight="700" fill="#0B6E4F">Coco</text>
+    <text x="100" y="153" text-anchor="middle" font-family="Georgia, serif" font-size="33" font-weight="700" fill="#0B6E4F">Wave</text>
+    <path d="M46 199c37 27 76 27 113 0" fill="none" stroke="#F4A520" stroke-width="12" stroke-linecap="round"/>
+    <text x="100" y="265" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#1C2B22">Lime Breeze</text>
+    <text x="100" y="303" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#5A7367">served chilled</text>
+  </g>
+  <circle cx="106" cy="427" r="34" fill="#0B6E4F"/>
+  <circle cx="106" cy="427" r="20" fill="#F9F4EC"/>
+  <path d="M587 76l44 72h-88z" fill="#F4A520"/>
+  <path d="M587 76v72M565 113h44" stroke="#F9F4EC" stroke-width="5"/>
+</svg>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CocoWave is a premium coconut water brand offering clean hydration, tropical flavors, and sustainable sourcing for active adults.">
+  <meta name="author" content="Roiman Romero">
+  <title>CocoWave | Ride the Natural Wave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/cocowave.css">
+  <script src="scripts/cocowave.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CocoWave home">
+      <img src="images/logo.svg" alt="" width="52" height="52">
+      <span>CocoWave</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Pure coconut water for active days</p>
+        <h1>Ride the Natural Wave.</h1>
+        <p>CocoWave is harvested from young green coconuts and packed without added sugar, giving you a clean source of naturally occurring electrolytes.</p>
+        <div class="hero-actions">
+          <a class="button" href="products.html">Explore Flavors</a>
+          <a class="text-link" href="benefits.html">See hydration benefits</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="CocoWave coconut water cartons">
+        <img src="images/hero-products.webp" alt="Three CocoWave coconut water cartons with tropical fruit accents" width="720" height="560">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured lineup</p>
+        <h2>Fresh flavors, no shortcuts.</h2>
+        <p>Each blend starts with coconut water, light fruit notes, and the simple promise that refreshment should feel clean.</p>
+      </div>
+      <div id="featured-products" class="product-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="split-band">
+      <div>
+        <p class="eyebrow">Why CocoWave?</p>
+        <h2>Hydration that fits real routines.</h2>
+      </div>
+      <div class="reason-list">
+        <article>
+          <h3>No Added Sugar</h3>
+          <p>Naturally sweet coconut water keeps every sip light, balanced, and easy to enjoy after movement or with meals.</p>
+        </article>
+        <article>
+          <h3>Not From Concentrate</h3>
+          <p>Our process protects the crisp taste of young coconut water without over-processing the drink.</p>
+        </article>
+        <article>
+          <h3>Made for Recovery</h3>
+          <p>Potassium, magnesium, and calcium support everyday hydration after workouts, walks, classes, and commutes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wave-banner">
+      <div>
+        <p class="eyebrow">Better from tree to carton</p>
+        <h2>Responsibly sourced coconut water in recyclable packaging.</h2>
+      </div>
+      <a class="button button-light" href="sustainability.html">Our Sustainability Promise</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="footer-brand" href="index.html">CocoWave</a>
+      <p>Premium coconut water for clean hydration and tropical momentum.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html">Contact</a>
+      <a href="references.html">References</a>
+    </nav>
+    <p class="footer-meta">&copy; <span id="year"></span> CocoWave. All rights reserved.</p>
+  </footer>
+</body>
+</html>

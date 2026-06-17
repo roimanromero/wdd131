@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore CocoWave coconut water flavors, pack sizes, and nutrition highlights for clean hydration at home, work, or the gym.">
+  <meta name="author" content="Roiman Romero">
+  <title>CocoWave | Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/cocowave.css">
+  <script src="scripts/cocowave.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CocoWave home">
+      <img src="images/logo.svg" alt="" width="52" height="52">
+      <span>CocoWave</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Product lineup</p>
+      <h1>Coconut water for every kind of refreshment.</h1>
+      <p>Choose a clean original, bright fruit blends, or larger packs built for gyms, cafés, offices, and families.</p>
+    </section>
+
+    <section class="section compact-section">
+      <div class="toolbar" aria-label="Product filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="classic">Classic</button>
+        <button class="filter-button" type="button" data-filter="fruit">Fruit</button>
+        <button class="filter-button" type="button" data-filter="bulk">Bulk</button>
+      </div>
+      <div id="product-list" class="product-grid" aria-live="polite"></div>
+      <p id="saved-message" class="status-message" aria-live="polite"></p>
+    </section>
+
+    <section class="nutrition-panel">
+      <div>
+        <p class="eyebrow">Typical 11 oz carton</p>
+        <h2>Simple nutrition profile</h2>
+        <p>CocoWave is designed as a clean alternative to sweetened sports drinks. Nutrition varies by flavor, but each carton keeps the ingredient list short.</p>
+      </div>
+      <dl class="nutrition-grid">
+        <div><dt>Calories</dt><dd>55-70</dd></div>
+        <div><dt>Added Sugar</dt><dd>0 g</dd></div>
+        <div><dt>Potassium</dt><dd>470 mg</dd></div>
+        <div><dt>Ingredients</dt><dd>3 or fewer</dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="footer-brand" href="index.html">CocoWave</a>
+      <p>Premium coconut water for clean hydration and tropical momentum.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html">Contact</a>
+      <a href="references.html">References</a>
+    </nav>
+    <p class="footer-meta">&copy; <span id="year"></span> CocoWave. All rights reserved.</p>
+  </footer>
+</body>
+</html>

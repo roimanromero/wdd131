@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">CocoWave logo</title>
+  <desc id="desc">A coconut mark with a wave and leaf in green and amber.</desc>
+  <circle cx="64" cy="64" r="58" fill="#F9F4EC" stroke="#F4A520" stroke-width="10"/>
+  <ellipse cx="64" cy="68" rx="34" ry="39" fill="#0B6E4F"/>
+  <circle cx="51" cy="55" r="5" fill="#F9F4EC"/>
+  <circle cx="65" cy="51" r="5" fill="#F9F4EC"/>
+  <circle cx="76" cy="58" r="5" fill="#F9F4EC"/>
+  <path d="M41 79c11 10 34 10 46 0" fill="none" stroke="#F4A520" stroke-width="7" stroke-linecap="round"/>
+  <path d="M69 30c10-13 24-16 36-10-3 14-18 23-35 18" fill="#5A7367"/>
+  <path d="M68 38c7 1 16-3 25-13" fill="none" stroke="#F9F4EC" stroke-width="3" stroke-linecap="round"/>
+</svg>

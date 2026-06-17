@@ -1,0 +1,739 @@
+:root {
+  --green: #0b6e4f;
+  --amber: #f4a520;
+  --cream: #f9f4ec;
+  --night: #1c2b22;
+  --sage: #5a7367;
+  --white: #ffffff;
+  --line: #d9d0c2;
+  --shadow: 0 18px 42px rgba(28, 43, 34, 0.12);
+  --radius: 8px;
+  --max-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--night);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--green);
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.05;
+}
+
+h1 {
+  max-width: 12ch;
+  font-size: clamp(3rem, 9vw, 6.8rem);
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
+p {
+  margin: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 76px;
+  padding: 0.75rem clamp(1rem, 4vw, 3rem);
+  background: rgba(249, 244, 236, 0.96);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
+}
+
+.brand,
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--green);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  font-weight: 700;
+}
+
+.primary-nav a {
+  padding: 0.35rem 0;
+  color: var(--night);
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible,
+.primary-nav a[aria-current="page"] {
+  color: var(--green);
+  border-color: var(--amber);
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 0.6rem;
+  background: var(--green);
+  border: 0;
+  border-radius: var(--radius);
+}
+
+.nav-toggle span:not(.sr-only) {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 4px 0;
+  background: var(--cream);
+  border-radius: 2px;
+}
+
+.hero,
+.section,
+.page-intro,
+.benefit-layout,
+.comparison,
+.contact-layout,
+.nutrition-panel,
+.timeline,
+.impact-band {
+  width: min(var(--max-width), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 4rem);
+  min-height: calc(100vh - 76px);
+  padding: 3rem 0 4.5rem;
+}
+
+.hero-copy,
+.page-intro,
+.section-heading,
+.comparison > div,
+.nutrition-panel > div,
+.impact-band > div {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-copy > p:not(.eyebrow),
+.page-intro > p:not(.eyebrow),
+.section-heading p,
+.comparison p,
+.nutrition-panel p,
+.impact-band p {
+  max-width: 62ch;
+  color: var(--sage);
+  font-size: 1.08rem;
+}
+
+.hero-visual {
+  position: relative;
+  padding: 1rem;
+}
+
+.hero-visual::before {
+  position: absolute;
+  inset: 8% 0 6% 6%;
+  z-index: -1;
+  content: "";
+  background: var(--green);
+  border-radius: 40% 60% 55% 45%;
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  color: var(--sage);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-actions,
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.button,
+.filter-button,
+.save-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.78rem 1.15rem;
+  color: var(--night);
+  font: inherit;
+  font-weight: 800;
+  text-decoration: none;
+  background: var(--amber);
+  border: 2px solid var(--amber);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus-visible,
+.filter-button:hover,
+.filter-button:focus-visible,
+.save-button:hover,
+.save-button:focus-visible {
+  color: var(--cream);
+  background: var(--green);
+  border-color: var(--green);
+}
+
+.button-light {
+  color: var(--night);
+  background: var(--cream);
+  border-color: var(--cream);
+}
+
+.text-link {
+  color: var(--green);
+  font-weight: 800;
+}
+
+.section {
+  padding: 4.5rem 0;
+}
+
+.compact-section {
+  padding-top: 1rem;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.product-card {
+  display: grid;
+  gap: 0.9rem;
+  min-height: 100%;
+  padding: 1.1rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.product-art {
+  display: grid;
+  min-height: 210px;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(11, 110, 79, 0.12), rgba(244, 165, 32, 0.22));
+  border-radius: var(--radius);
+}
+
+.carton {
+  width: 118px;
+  min-height: 172px;
+  padding: 1rem 0.8rem;
+  color: var(--night);
+  text-align: center;
+  background: var(--cream);
+  border: 4px solid var(--green);
+  border-radius: 6px 6px 12px 12px;
+  box-shadow: 10px 12px 0 rgba(11, 110, 79, 0.2);
+}
+
+.carton strong {
+  display: block;
+  color: var(--green);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.carton span {
+  display: block;
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
+  font-weight: 800;
+  border-top: 3px solid var(--amber);
+}
+
+.product-card p {
+  color: var(--sage);
+}
+
+.product-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.product-meta li {
+  padding: 0.3rem 0.55rem;
+  color: var(--green);
+  font-size: 0.88rem;
+  font-weight: 800;
+  background: rgba(11, 110, 79, 0.1);
+  border-radius: 999px;
+}
+
+.split-band,
+.wave-banner {
+  width: 100%;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
+  background: var(--green);
+}
+
+.split-band {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.split-band h2,
+.wave-banner h2 {
+  color: var(--cream);
+}
+
+.split-band .eyebrow,
+.wave-banner .eyebrow {
+  color: var(--amber);
+}
+
+.reason-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.reason-list article {
+  padding: 1.1rem;
+  color: var(--cream);
+  border: 1px solid rgba(249, 244, 236, 0.28);
+  border-radius: var(--radius);
+}
+
+.reason-list h3 {
+  color: var(--amber);
+  margin-bottom: 0.55rem;
+}
+
+.wave-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.wave-banner h2 {
+  max-width: 780px;
+}
+
+.page-intro {
+  padding: clamp(3rem, 8vw, 6rem) 0 2rem;
+}
+
+.filter-button {
+  color: var(--green);
+  background: transparent;
+  border-color: var(--green);
+}
+
+.filter-button.active {
+  color: var(--night);
+  background: var(--amber);
+  border-color: var(--amber);
+}
+
+.status-message {
+  min-height: 1.6rem;
+  color: var(--green);
+  font-weight: 800;
+}
+
+.nutrition-panel,
+.comparison,
+.impact-band,
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(320px, 1.15fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+  padding: 4rem 0;
+}
+
+.nutrition-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0;
+}
+
+.nutrition-grid div,
+.benefit-cards article,
+.timeline article,
+.contact-card {
+  padding: 1.1rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.nutrition-grid dt {
+  color: var(--sage);
+  font-weight: 800;
+}
+
+.nutrition-grid dd {
+  margin: 0.2rem 0 0;
+  color: var(--green);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.15rem;
+  font-weight: 900;
+}
+
+.benefit-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: 2rem 0 4rem;
+}
+
+.benefit-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.benefit-cards p,
+.timeline p,
+.contact-card p {
+  color: var(--sage);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+caption {
+  margin-bottom: 0.65rem;
+  color: var(--sage);
+  font-weight: 800;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 0.9rem;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+thead th {
+  color: var(--cream);
+  background: var(--green);
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 2rem 0 4rem;
+}
+
+.timeline span {
+  display: inline-grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  margin-bottom: 0.8rem;
+  color: var(--night);
+  font-weight: 900;
+  background: var(--amber);
+  border-radius: 999px;
+}
+
+.impact-band {
+  align-items: center;
+}
+
+.check-list {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+
+.check-list li {
+  padding-left: 1.9rem;
+  background-image: linear-gradient(var(--amber), var(--amber));
+  background-repeat: no-repeat;
+  background-position: 0 0.72rem;
+  background-size: 1rem 0.32rem;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 1.2rem;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.contact-form div {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.full-field,
+.contact-form .status-message,
+.contact-form button {
+  grid-column: 1 / -1;
+}
+
+label {
+  color: var(--green);
+  font-weight: 800;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.75rem;
+  color: var(--night);
+  font: inherit;
+  background: var(--cream);
+  border: 2px solid var(--line);
+  border-radius: var(--radius);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid rgba(244, 165, 32, 0.4);
+  border-color: var(--green);
+}
+
+.checkbox-field {
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.checkbox-field input {
+  width: 22px;
+  min-height: 22px;
+}
+
+.site-footer {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.2fr) minmax(260px, 1fr);
+  gap: 1.5rem;
+  padding: 2.5rem clamp(1rem, 4vw, 3rem);
+  color: var(--cream);
+  background: var(--night);
+}
+
+.site-footer p {
+  max-width: 45ch;
+  color: rgba(249, 244, 236, 0.78);
+}
+
+.site-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+  align-content: start;
+  justify-content: flex-end;
+}
+
+.site-footer a {
+  color: var(--cream);
+  font-weight: 800;
+}
+
+.footer-brand {
+  color: var(--amber);
+}
+
+.footer-meta {
+  grid-column: 1 / -1;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 860px) {
+  .nav-toggle {
+    display: inline-block;
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    right: 1rem;
+    left: 1rem;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .primary-nav.open {
+    display: flex;
+  }
+
+  .hero,
+  .benefit-layout,
+  .comparison,
+  .contact-layout,
+  .nutrition-panel,
+  .impact-band,
+  .split-band {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 2rem;
+  }
+
+  h1 {
+    max-width: 10ch;
+  }
+
+  .product-grid,
+  .reason-list,
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .wave-banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .site-footer nav {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand span {
+    font-size: 1.35rem;
+  }
+
+  .hero,
+  .section,
+  .page-intro,
+  .benefit-layout,
+  .comparison,
+  .contact-layout,
+  .nutrition-panel,
+  .timeline,
+  .impact-band {
+    width: min(100% - 1rem, var(--max-width));
+  }
+
+  .contact-form,
+  .nutrition-grid {
+    grid-template-columns: 1fr;
+  }
+
+  th,
+  td {
+    padding: 0.7rem;
+    font-size: 0.92rem;
+  }
+}

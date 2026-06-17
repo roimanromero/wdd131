@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact CocoWave for retail partnerships, wholesale orders, café supply, gym programs, and customer support.">
+  <meta name="author" content="Roiman Romero">
+  <title>CocoWave | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/cocowave.css">
+  <script src="scripts/cocowave.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="CocoWave home">
+      <img src="images/logo.svg" alt="" width="52" height="52">
+      <span>CocoWave</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Open navigation</span><span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <p class="eyebrow">Let's connect</p>
+      <h1>Bring CocoWave to your shelf, studio, or event.</h1>
+      <p>Use the form for wholesale pricing, retail distribution, customer support, or partnership opportunities. We reply within two business days.</p>
+    </section>
+
+    <section class="contact-layout">
+      <form id="contact-form" class="contact-form" action="#" method="get">
+        <div>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="request">Request Type</label>
+          <select id="request" name="request" required>
+            <option value="">Select one</option>
+            <option value="retail">Retail partnership</option>
+            <option value="wholesale">Wholesale order</option>
+            <option value="support">Customer support</option>
+            <option value="events">Events and sampling</option>
+          </select>
+        </div>
+        <div>
+          <label for="quantity">Estimated Monthly Cases</label>
+          <input id="quantity" name="quantity" type="number" min="1" max="1000" inputmode="numeric">
+        </div>
+        <div class="full-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <div class="checkbox-field full-field">
+          <input id="updates" name="updates" type="checkbox">
+          <label for="updates">Send me flavor launches and wholesale updates.</label>
+        </div>
+        <button class="button" type="submit">Send Request</button>
+        <p id="form-status" class="status-message" aria-live="polite"></p>
+      </form>
+
+      <aside class="contact-card">
+        <h2>Distributor Desk</h2>
+        <p><strong>Email:</strong> hello@cocowave.example</p>
+        <p><strong>Phone:</strong> (555) 018-1310</p>
+        <p><strong>Hours:</strong> Monday-Friday, 9:00 AM-5:00 PM</p>
+        <p>For urgent retail inventory questions, include your store name, city, and estimated case volume.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <a class="footer-brand" href="index.html">CocoWave</a>
+      <p>Premium coconut water for clean hydration and tropical momentum.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="products.html">Products</a>
+      <a href="benefits.html">Health Benefits</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="contact.html">Contact</a>
+      <a href="references.html">References</a>
+    </nav>
+    <p class="footer-meta">&copy; <span id="year"></span> CocoWave. All rights reserved.</p>
+  </footer>
+</body>
+</html>
